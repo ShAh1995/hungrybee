@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Food Delivery App</title>
+</head>
+
+<body>
+    <!--Layout-->
+
+    <div class='container'>
+        <!--Row-->
+        <div class='row header'>
+            <div class="col-md-1">
+                <div><img class="app-icon" src="./logo.png"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col"><a class="btn btn-style nav-style" data-toggle="collapse" role="button" href="#address">Enter
+                            your address</a></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="row nav-links">
+                    <div class="col-md-2">
+                        <a class="btn btn-style nav-style" href="#">
+                            <i class="fa fa-search"></i> Search</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-style nav-style" href="#"><i class="fa fa-percent" aria-hidden="true"></i>Offers
+                        </a></div>
+                    <div class="col-md-2">
+                        <a class="btn btn-style" href="#"><i class="fa fa-question-circle"
+                                aria-hidden="true"></i>Help</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown">
+                            <a class="btn btn-style dropdown-toggle nav-style user-button" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  >
+                                User Name
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Orders</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-style nav-style">
+                            Cart <span class="badge badge-light">4</span>
+                        </button></div>
+                </div>
+            </div>
+        </div>
+        <form class="collapse" id="address">
+            <div class="form-group">
+                <label for="doorNumber">Door Number</label>
+                <input type="text" class="form-control" id="doorNumber" placeholder="Doornumber">
+            </div>
+            <div class="form-group">
+                <label for="streetName">Street Name</label>
+                <input type="text" class="form-control" id="streetName" placeholder="Street Name">
+            </div>
+            <div class="form-group">
+                <label for="pinCode">PinCode</label>
+                <input type="text" class="form-control" id="pinCode" placeholder="Pin-code">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-style">Submit</button>
+        </form>
+        <!--Carousel-->
+        <div class="row">
+            <div class="container">
+                <div id="itemsSlider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class='row container'>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://themify.me/wp-content/uploads/2016/06/switch-to-themify.png"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">50% offer</h5>
+                                                <p class="card-text">Grab your festive offer on Hungry Bee.</p>
+                                                <a href="#poori" class="btn btn-style">Grab Offer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://www.helpguide.org/wp-content/uploads/fast-foods-candy-cookies-pastries-768.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Burger Day</h5>
+                                                <p class="card-text">Celebrate International Burger Day with Hungry Bee.
+                                                </p>
+                                                <a href="#burger" class="btn btn-style">Grab Burger</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://img.etimg.com/thumb/msid-72299767,width-650,imgsize-365179,,resizemode-4,quality-100/indian-food-bccl.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Welcome Biryani</h5>
+                                                <p class="card-text">Say bye to Hungry n welcome Biryani to your
+                                                    sweet home.</p>
+                                                <a href="#biryani" class="btn btn-style">ByBye Hungry</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class='row container'>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Grocery</h5>
+                                                <p class="card-text">Fresh vegetables, Meats, and all groceries at same
+                                                    place.</p>
+                                                <a href="#grocery" class="btn btn-style">Freshie-fresh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://cdn.cdnparenting.com/articles/2018/11/23151909/Chicken-Shawarma.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Shawarma Party</h5>
+                                                <p class="card-text">Bulk 50% off on bulk orders.</p>
+                                                <a href="#shawarma" class="btn btn-style">Go Shawarma</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://pipingpotcurry.com/wp-content/uploads/2019/05/How-to-make-Masala-Chai-Piping-Pot-Curry.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Chai lover</h5>
+                                                <p class="card-text">Grab your chance chai lovers 5%off on orders above
+                                                    100rs.</p>
+                                                <a href="#chai" class="btn btn-style">Chai a day</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class='row container'>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Hungry-Money</h5>
+                                                <p class="card-text">Cashback offer for your favorite items.</p>
+                                                <a href="#dosa" class="btn btn-style">Cashback</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/policy/juice-boost-thailand-considers-tax-exemptions-for-drinks-with-higher-fruit-and-veg-content/9057224-1-eng-GB/Juice-boost-Thailand-considers-tax-exemptions-for-drinks-with-higher-fruit-and-veg-content_wrbm_large.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Juice Corner</h5>
+                                                <p class="card-text">20% off for all fresh juices.</p>
+                                                <a href="#juice" class="btn btn-style">Thirsty-Juicy</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="container" style="text-align: center;">
+                                        <div class="card carousel-card card-style">
+                                            <img class='img-fluid' src="https://qphs.fs.quoracdn.net/main-qimg-287052e55fc1570e780b8f23a2b4942b"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Snackie Corner</h5>
+                                                <p class="card-text">Grab 30% off for your snacks cravings.</p>
+                                                <a href="#samosa" class="btn btn-style">Snackie Snacks</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#itemsSlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#itemsSlider" data-slide-to="1"></li>
+                            <li data-target="#itemsSlider" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class='row details-section'>
+                <div class='col-md-2 nav-menu'>
+                    <ul class="list-group list-style">
+                        <li class="list-group-item odd">Buyer's Choice</li>
+                        <li class="list-group-item even">Combo Offers</li>
+                        <li class="list-group-item odd">Premium</li>
+                        <li class="list-group-item even">More Offers</li>
+                        <li class="list-group-item odd">Vegetarian Specials</li>
+                    </ul>
+                </div>
+                <div class='col-md-10 food-cards'>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1224&q=80"
+                            class="card-img-top" alt="Roti with paneer butter masala">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Shash</h5>
+                            <p class="card-text">NorthIndian, Chinese, SouthIndian.</p>
+                            <a class="btn btn-style" data-target="#collapseExample" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="collapseExample">Quick View</a>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    50% offer on orders above 1400.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://curlytales.com/wp-content/uploads/2018/11/shutterstock_1153818823.jpg"
+                            class="card-img-top" alt="tamilnadu special Breakfast">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Tamilnadu</h5>
+                            <p class="card-text">South-Indian, Vilomewherelage-food.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="samosa">
+                        <img class='img-fluid' src="https://qphs.fs.quoracdn.net/main-qimg-287052e55fc1570e780b8f23a2b4942b"
+                            class="card-img-top" alt="Samosa chaat">
+                        <div class="card-body">
+                            <h5 class="card-title">Snack Corner</h5>
+                            <p class="card-text">Snacks, Chaat, Juice, Dessert.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://static.toiimg.com/photo/56624568/.jpg" class="card-img-top"
+                            alt="North-Indian thali">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Rinze</h5>
+                            <p class="card-text">North-Indian Thali, South-Indian Thali.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://scontent.fmaa6-1.fna.fbcdn.net/v/t31.0-8/14890329_1597543407215432_548414019306609867_o.jpg?_nc_cat=106&ccb=2&_nc_sid=e3f864&_nc_ohc=ipYQxJ8Q4yoAX8BKb5z&_nc_ht=scontent.fmaa6-1.fna&oh=6074227f647f83a927120c1384213a15&oe=5FCF8E8E"
+                            class="card-img-top" alt="South-Indian Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">Arokiyam Mess</h5>
+                            <p class="card-text">Meals, Vareity Rice, Breakfast, Dinner.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="briyani">
+                        <img class='img-fluid' src="https://images.livemint.com/img/2020/02/01/600x338/biryani_1580551590005.jpg"
+                            class="card-img-top" alt="Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Special Biryani</h5>
+                            <p class="card-text">Biryani, Parotta, Grill.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://media.gettyimages.com/photos/tandoori-chicken-picture-id155369528?s=2048x2048"
+                            class="card-img-top" alt=" tandoori-chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Chicken</h5>
+                            <p class="card-text">Tandoori Chicken, Grill Chicken, Chicken Tikka.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style">
+                        <img class='img-fluid' src="https://media3.s-nbcnews.com/j/newscms/2019_39/3027176/190926-chicken-tikka-masala-se-405p_663a402a82bc1464dfc1838472644431.fit-2000w.jpg"
+                            class="card-img-top" alt="Chicken tikka">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel BowlRice</h5>
+                            <p class="card-text">Chicken BowlRice, Mutton BowlRice, FishBowlRice.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="poori">
+                        <img class='img-fluid' src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/02/04/Pictures/north-indina-thali-lunch-plate-indian-north_f50c14d8-2880-11e9-b7de-6a9a06b91305.jpg"
+                            class="card-img-top" alt="poori">
+                        <div class="card-body">
+                            <h5 class="card-title">Hotel Madu</h5>
+                            <p class="card-text">Dosa, Pongal, poori, Vada.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="dosa">
+                        <img class='img-fluid' src="https://qphs.fs.quoracdn.net/main-qimg-b9be4cec4d5c1a7ae14d87f290853dd8"
+                            class="card-img-top" alt="Dosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Dosai Special</h5>
+                            <p class="card-text">Schezwan Dosa, Masal Dosa, Special Dosa.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="burger">
+                        <img class='img-fluid' src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-keto-pizza-073-1544039876.jpg?crop=0.668xw:1.00xh;0.233xw,0.00255xh&resize=980:*"
+                            class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">PizzaMania</h5>
+                            <p class="card-text">Pizza, Burger, Taco.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="shawarma">
+                        <img class='img-fluid' src="https://cdn.cdnparenting.com/articles/2018/11/23151909/Chicken-Shawarma.jpg"
+                            class="card-img-top" alt="Chicken Shawarma">
+                        <div class="card-body">
+                            <h5 class="card-title">Shawarma spot</h5>
+                            <p class="card-text">Chicken Shawarma, Egg Shawarma, Fish Shawarma, Veg Shawarma.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="juice">
+                        <img class='img-fluid' src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/policy/juice-boost-thailand-considers-tax-exemptions-for-drinks-with-higher-fruit-and-veg-content/9057224-1-eng-GB/Juice-boost-Thailand-considers-tax-exemptions-for-drinks-with-higher-fruit-and-veg-content_wrbm_large.jpg"
+                            class="card-img-top" alt="juice">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh Juice</h5>
+                            <p class="card-text">Juice, Milkshakes, Icecream.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="chai">
+                        <img class='img-fluid' src="https://pipingpotcurry.com/wp-content/uploads/2019/05/How-to-make-Masala-Chai-Piping-Pot-Curry.jpg"
+                            class="card-img-top" alt="chai">
+                        <div class="card-body">
+                            <h5 class="card-title">Chai kadai</h5>
+                            <p class="card-text">Chai, Black Tea, Green Tea, Lemon Tea.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="card card-style" id="grocery">
+                        <img class='img-fluid' src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
+                            class="card-img-top" alt="meat">
+                        <div class="card-body">
+                            <h5 class="card-title"> Fella Grocery Shop</h5>
+                            <p class="card-text">Rice, Meat, Lentils, Vegetables.</p>
+                            <a href="#" class="btn btn-style">Quick View</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+body{
+    background-color: white;
+}
+.carousel-item{
+    margin-top: 20px;
+    height: 450px;
+}
+.card-img-top{
+    height: 200px;
+}
+.carousel-indicators > li{
+        background-color: white;
+}
+#itemsSlider{
+    background-color: black;
+}
+.food-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.food-cards > .card{
+    margin: 5px;
+    width: 18rem;
+}
+.carousel-control-prev{
+    color: red;
+}
+.carousel-control-next{
+    color: red;
+}
+.nav-links > div{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.app-icon{
+    width: 70px;
+    height: 70px;
+}
+.header{
+    margin-bottom: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.collapse{
+    margin-top: 10px;
+}
+.list-style{
+    margin:10px;
+    border-style: solid;
+    border-color:rgb(254,178,0);
+
+}
+.odd{
+    background-color:rgb(254,178,0) ;
+    height:75px;
+}
+.even{
+    height:75px;
+}
+.btn-style{
+   background-color: rgb(254,178,0);    
+}
+.card-style{
+    border-style: solid;
+    border-color:rgb(254,178,0);
+    height:400px;
+}
+.card:hover{
+    box-shadow: 10px 10px 52px 6px rgba(0,0,0,0.68);
+    border:10px;
+
+}
+#address{
+    width:500px;
+    height:350px;
+
+}
+.nav-style{
+    height:60px;
+    text-align: center;
+}
+.card-text{
+    height:50px;
+}
+.card{
+    transition: box-shadow 0.5s;
+}
+.carousel-card:hover{
+    box-shadow: 0px 0px 55px 8px rgba(231,166,26,1);
+}
+.user-button{
+    align-items: center;
+    display:flex;
+    height:60px;
+}
